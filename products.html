@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products We Sell</title>
-    <link href="./assets/css/nav/style.css" type="text/css" rel="stylesheet">
-    <link href="./assets/css/products/style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-    <nav class="nav-container">
-        <div class="nav-logo">
-            <h1>SSA HyperFlux</h1>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Products</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="card">
-        <img src="assets/images/img-placeholder.jpg" alt="Placeholder"/>
-        <span class="text-content">
-            <h1>Mini Bladeless Gaming Fan</h1>
-            <p>Comes with Premium RGB!</p>
-        </span>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products We Sell</title>
+        <link href="./assets/css/products/style.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script> 
+          $(function(){
+            $("#loadedNav").load("nav.html"); 
+          });
+        </script> 
+    </head>
+    <body>
+        <div id="loadedNav"></div> 
+        <main class="content-container">
+            <h1>Products!</h1>
+            <div class="product-card-container">
+                <div class="card">
+                    <img src="assets/images/img-placeholder.jpg" alt="Placeholder"/>
+                    <span class="text-content">
+                        <h1>Mini Bladeless Gaming Fan</h1>
+                        <p>Premium version comes with RGB lights!</p>
+                    </span>
+                </div>
+                <div class="card">
+                    <img src="assets/images/img-placeholder.jpg" alt="Placeholder"/>
+                    <span class="text-content">
+                        <h1>Medium Bladeless Gaming Fan</h1>
+                        <p>Premium version comes with RGB lights!</p>
+                    </span>
+                </div>
+                <div class="card">
+                    <img src="assets/images/img-placeholder.jpg" alt="Placeholder"/>
+                    <span class="text-content">
+                        <h1>Jumbo Bladeless Gaming Fan</h1>
+                        <p>Premium version comes with RGB lights!</p>
+                    </span>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

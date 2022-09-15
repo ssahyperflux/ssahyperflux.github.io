@@ -7,6 +7,16 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.content-container {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.product-card-container {
+    display: flex;
+}
+
 .card {
     border: 2px solid white;
     border-radius: 10px;
@@ -15,8 +25,9 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
+    width: 300px;
+    text-align: center;
 }
 
 .card:hover {
@@ -28,7 +39,7 @@ body {
 }
 
 .card img {
-    width: 100px;
+    width: 150px;
     display: inline-block;
     float: none;
     margin-top: 10px;
