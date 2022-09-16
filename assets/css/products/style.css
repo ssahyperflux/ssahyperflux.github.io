@@ -43,8 +43,13 @@ body {
     text-decoration: none;
 }
 
+.card h1 {
+    color: white;
+}
+
 .card a span {
     width: 10px;
+    color: white;
 }
 
 .card a img {
