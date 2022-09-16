@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bladeless Desktop Gaming Fan</title>
+    <link href="../assets/css/products/product/style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#loadedNav").load("../nav.html"); 
+      });
+    </script> 
+  </head>
+  <body>
+    <div id="loadedNav"></div>
+    <main class="content-container">
+      <section class="product-image">
+        <img src="../assets/images/img-placeholder.jpg" alt="Product Image"/> 
+      </section>
+      <section class="product-container">
+        <div class="product-details">
+          <h1>Bladeless Gaming Fan</h1><br>
+          <h2>A bladeless gaming fan, allowing for no noise disturbance while gaming, that comes with RGB. Ideal for all gamers!</h2>
+          <div class="product-size-options">
+            <button id="size-s" type="button">
+              <img src="../assets/images/img-placeholder.jpg" alt="Mini-Sized Product Image"/> 
+              <p>Mini</p>
+            </button>
+            <button id="size-m" type="button">
+              <img src="../assets/images/img-placeholder.jpg" alt="Mini-Sized Product Image"/> 
+              <p>Medium</p>
+            </button>
+            <button id="size-l" type="button">
+              <img src="../assets/images/img-placeholder.jpg" alt="Mini-Sized Product Image"/> 
+              <p>Jumbo</p>
+            </button>
+          </div>
+          <div class="quantity-option">
+            <label for="quantity-dropdown">Qty:</label>
+            <select id="quantity-dropdown" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="purchase-option">
+            <button class="purchase-btn" role="button" disabled title="Under Construction"><span class="text">Purchase</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/products/product/script.js"></script>
+  </body>
+</html>
