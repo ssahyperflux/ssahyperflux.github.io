@@ -13,10 +13,10 @@ if (loadedSizeFromUrl == "small") {
 }
 
 const loadedPremiumFromUrl = urlParamsObj.get('premium');
-if (loadedPremiumFromUrl == "false") {
-    $('#premium-no').toggleClass("premium-product-option-selected");
-} else if (loadedPremiumFromUrl == "true") {
+if (loadedPremiumFromUrl == "true") {
     $('#premium-yes').toggleClass("premium-product-option-selected");
+} else {
+    $('#premium-no').toggleClass("premium-product-option-selected");
 }
 
 $('#size-s').click(function() {
