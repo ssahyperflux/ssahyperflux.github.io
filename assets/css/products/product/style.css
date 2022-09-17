@@ -46,6 +46,8 @@ body {
     margin-top: -50px;
 }
 
+/* ---------------------- */
+
 .product-size-options {
     display: flex;
     justify-content: center;
@@ -89,6 +91,55 @@ body {
     border: 2px solid orange !important;
 }
 
+/* ---------------------------- */
+
+.premium-product-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.premium-product-options button {
+    background-color: #45475a;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .premium-product-options button {
+        margin-top: 30px;
+    }
+}
+
+.premium-product-options button:hover {
+    border: 2px solid orange;
+    transition: 0.4s ease-in-out;
+}
+
+.premium-product-options button p {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.premium-product-option-selected {
+    border: none;
+    border: 2px solid orange !important;
+}
+
+/* Tentaive ⬇️ */
+.premium-product-options button img {
+    width: 70px;
+    padding: 20px;
+}
+
+/* ------------------------ */
+
 .quantity-option {
     margin-top: 40px;
     font-size: 20px;
@@ -99,6 +150,8 @@ body {
     border-radius: 10px;
     text-align: center;
 }
+
+/* ---------------------- */
 
 .purchase-option {
     display: inline-block;
@@ -157,3 +210,5 @@ body {
         min-width: 196px;
     }
 }
+
+/* ------------------------- */

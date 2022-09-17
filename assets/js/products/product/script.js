@@ -12,6 +12,13 @@ if (loadedSizeFromUrl == "small") {
     $('#size-l').toggleClass("product-size-option-selected");
 }
 
+const loadedPremiumFromUrl = urlParamsObj.get('premium');
+if (loadedPremiumFromUrl == "false") {
+    $('#premium-no').toggleClass("premium-product-option-selected");
+} else if (loadedPremiumFromUrl == "true") {
+    $('#premium-yes').toggleClass("premium-product-option-selected");
+}
+
 $('#size-s').click(function() {
     if ($('#size-m').hasClass('product-size-option-selected')) {
         $('#size-m').toggleClass('product-size-option-selected');
@@ -23,7 +30,8 @@ $('#size-s').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=small"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -41,7 +49,8 @@ $('#size-s').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=small"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -58,7 +67,8 @@ $('#size-s').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=small"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -80,7 +90,8 @@ $('#size-m').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=medium"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -98,7 +109,8 @@ $('#size-m').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=medium"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -115,7 +127,8 @@ $('#size-m').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=medium"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -137,7 +150,8 @@ $('#size-l').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=large"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -155,7 +169,8 @@ $('#size-l').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=large"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
@@ -172,13 +187,96 @@ $('#size-l').click(function() {
             const url = window.location.protocol 
                         + "//" + window.location.host 
                         + window.location.pathname 
-                        + "?size=large"
+                        + "?" 
+                        + searchParams.toString();
 
             window.history.replaceState({
                 path: url
             }, "", url)
         }
         
+        return;
+    }
+});
+
+$('#premium-no').click(function() {
+    if ($('#premium-yes').hasClass('premium-product-option-selected')) {
+        $('#premium-yes').toggleClass('premium-product-option-selected');
+        $('#premium-no').toggleClass("premium-product-option-selected");
+
+        searchParams.set("premium", "false");
+
+        if (window.history.replaceState) {
+            const url = window.location.protocol 
+                        + "//" + window.location.host 
+                        + window.location.pathname 
+                        + "?" 
+                        + searchParams.toString();
+
+            window.history.replaceState({
+                path: url
+            }, "", url)
+        }
+
+        return;
+    } else {
+        $('#premium-no').toggleClass("premium-product-option-selected");
+
+        searchParams.set("premium", "false");
+
+        if (window.history.replaceState) {
+            const url = window.location.protocol 
+                        + "//" + window.location.host 
+                        + window.location.pathname 
+                        + "?" 
+                        + searchParams.toString();
+
+            window.history.replaceState({
+                path: url
+            }, "", url)
+        }
+
+        return;
+    }
+});
+
+$('#premium-yes').click(function() {
+    if ($('#premium-no').hasClass('premium-product-option-selected')) {
+        $('#premium-no').toggleClass('premium-product-option-selected');
+        $('#premium-yes').toggleClass("premium-product-option-selected");
+
+        searchParams.set("premium", "true");
+
+        if (window.history.replaceState) {
+            const url = window.location.protocol 
+                        + "//" + window.location.host 
+                        + window.location.pathname 
+                        + "?" 
+                        + searchParams.toString();
+
+            window.history.replaceState({
+                path: url
+            }, "", url)
+        }
+
+        return;
+    } else {
+        $('#premium-yes').toggleClass("premium-product-option-selected");
+
+        searchParams.set("premium", "true");
+
+        if (window.history.replaceState) {
+            const url = window.location.protocol 
+                        + "//" + window.location.host 
+                        + window.location.pathname 
+                        + "?" 
+                        + searchParams.toString();
+
+            window.history.replaceState({
+                path: url
+            }, "", url)
+        }
+
         return;
     }
 });
