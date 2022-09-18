@@ -22,31 +22,27 @@
       <section class="product-container">
         <div class="product-details">
           <h1>Bladeless Gaming Fan</h1><br>
-          <h2>A bladeless gaming fan, allowing for no noise disturbance while gaming, that comes with RGB. Ideal for all gamers!</h2>
+          <h2>A bladeless gaming fan, allowing for no noise disturbance while gaming, <br>that comes with RGB (Premium versions only). Ideal for all gamers who want to stay cool!<br>Comes in 3 sizes and optional RGB (premium)</h2>
           <div class="product-size-options">
             <button id="size-s" type="button">
               <img src="../assets/images/img-placeholder.jpg" alt="Mini-Sized Product Image"/> 
-              <p>Mini</p>
+              <p>Mini ($25)</p>
             </button>
             <button id="size-m" type="button">
               <img src="../assets/images/img-placeholder.jpg" alt="Medium-Sized Product Image"/> 
-              <p>Medium</p>
+              <p>Medium ($35)</p>
             </button>
             <button id="size-l" type="button">
               <img src="../assets/images/img-placeholder.jpg" alt="Large-Sized Product Image"/> 
-              <p>Jumbo</p>
+              <p>Jumbo ($50)</p>
             </button>
           </div>
           <div class="premium-product-options">
-            <button id="premium-no" type="button">
-              <p>No Premium</p>
-            </button>
-            <button id="premium-yes" type="button">
-              <p>Premium<br>(+RGB)</p>
-            </button>
+            <button id="premium-no" type="button">No RGB (+$0)</button>
+            <button id="premium-yes" type="button">+RGB (+$)</button>
           </div>
           <div class="quantity-option">
-            <label for="quantity-dropdown">Qty:</label>
+            <label for="quantity-dropdown">Quantity:</label>
             <select id="quantity-dropdown" name="quantity">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -62,6 +58,9 @@
           </div>
           <div class="purchase-option">
             <button class="purchase-btn" role="button" disabled title="Under Construction"><span class="text">Purchase</span></button>
+          </div>
+          <div class="price">
+            <h3 id="price">Price (Tax not Included): $</h3>
           </div>
         </div>
       </section>

@@ -121,7 +121,7 @@ body {
     transition: 0.4s ease-in-out;
 }
 
-.premium-product-options button p {
+.premium-product-options button {
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
