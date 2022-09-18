@@ -414,6 +414,10 @@ $('#quantity-dropdown').change(function() {
     updatePrice(findSelectedSize());
 });
 
+$('#purchase-btn').click(function() {
+    $('.recaptcha-option').fadeIn(1000);
+});
+
 function findSelectedSize() {
     var foundSize = 0;
     if ($('#size-s').hasClass('product-size-option-selected')) {

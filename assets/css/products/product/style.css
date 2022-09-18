@@ -154,9 +154,17 @@ body {
 
 /* ---------------------- */
 
+.recaptcha-option {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ---------------------- */
+
 .purchase-option {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .purchase-btn {

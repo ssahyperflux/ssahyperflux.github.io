@@ -7,10 +7,24 @@
     <title>Bladeless Desktop Gaming Fan</title>
     <link href="assets/images/logov1-rounded.png" rel="icon" type="image/x-icon">
     <link href="assets/css/products/product/style.css" type="text/css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/products/product/captcha.js"></script>
+    <script>
+      function onLoadCallback() {
+        grecaptcha.render('recaptcha', {
+          sitekey: '6LeJvgsiAAAAAJAzu-KXKXVXJUasXomCLcO0ADxz',
+          callback: successCallback,
+          'error-callback': 'errorCallback',
+          'expired-callback': 'expiredCallback',
+          theme: 'dark'
+        });
+      }
+    </script>
     <script> 
       $(function(){
-        $("#loadedNav").load("../nav.html"); 
+        $('.recaptcha-option').hide(0);
+        $("#loadedNav").load("nav.html");
       });
     </script> 
   </head>
@@ -57,8 +71,11 @@
               <option value="10">10</option>
             </select>
           </div>
+          <div class="recaptcha-option">
+            <div id="recaptcha"></div>         
+          </div>
           <div class="purchase-option">
-            <button class="purchase-btn" role="button" disabled title="Under Construction"><span class="text">Purchase</span></button>
+            <button class="purchase-btn" id="purchase-btn" role="button" title="Under Construction"><span>Purchase</span></button>
           </div>
           <div class="price">
             <h3 id="price">Price (Tax not Included): $</h3>
